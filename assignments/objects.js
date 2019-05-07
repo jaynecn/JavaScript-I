@@ -24,7 +24,8 @@ const interns = [{ "id": 1, "email": "mmelloy0@psu.edu", "firstName": "Mitzi", "
 },
 {"id": 3, "email": "kmummery2@wikimedia.org", "firstName": "Kevan", "gender": "M"},
 {"id": 4, "email": "gmartinson3@illinois.edu", "firstName": "Gannie", "gender": "M"},
-{"id": 5, "email": "adaine5@samsung.com", "firstName": "Antionetta", "gender": "F"}
+{"id": 5, "email": "adaine5@samsung.com", "firstName": "Antionetta", "gender": "F", "multiplyNums": function (num1, num2) {console.log(num1 * num2);}
+}
 ]
 
 // ==== Challenge 2: Reading Object Data ==== 
@@ -49,14 +50,12 @@ console.log(interns[4].gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 
-// const speak = function () {
-//   console.log (`Hello, my name is ${this.firstName}!`)
-//  } 
-// }
 console.log(interns[1].speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+
+console.log(interns[4].multiplyNums(3,4));
+
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 

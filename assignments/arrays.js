@@ -34,7 +34,8 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 {"id":30,"car_make":"BMW","car_model":"6 Series","car_year":2010},
 {"id":31,"car_make":"Pontiac","car_model":"GTO","car_year":1964},
 {"id":32,"car_make":"Dodge","car_model":"Ram Van 3500","car_year":1999},
-{"id":33,"car_make":"Jeep","car_model":"Wrangler","car_year":2011},
+{"id":33,"car_make":"Jeep","car_model":"Wrangler","car_year":2011, "info":  function () {console.log(`Car ${this.id} is a ${this.car_year} ${this.car_model} ${this.car_make}`);} 
+},
 {"id":34,"car_make":"Ford","car_model":"Escort","car_year":1991},
 {"id":35,"car_make":"Chrysler","car_model":"300M","car_year":2000},
 {"id":36,"car_make":"Volvo","car_model":"XC70","car_year":2003},
@@ -65,13 +66,7 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 
 //JAYNE'S WORK BELOW 
-// inventoryInfo = function(inventory["id"]) {
-//   console.log (`Car ${this.id} is a ${car_year} ${car_make} ${car_model}`);
-// }
-
-// inventoryInfo(33);
-
-console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
+console.log(inventory[32].info(33));
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
