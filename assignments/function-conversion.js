@@ -8,10 +8,10 @@ let anotherFunction = (param) => param;
 console.log(anotherFunction("Example"));
 
 let add = (param1, param2) => param1 + param2;
-console.log(add(1,2));
+console.log(add(2,2));
 
 let subtract = (param1, param2) => param1 - param2;
-console.log(subtract(1,2));
+console.log(subtract(5,2));
 
 
 // Stretch
