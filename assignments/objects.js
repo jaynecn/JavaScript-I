@@ -17,6 +17,14 @@ const example = {
   "gender": "F"
 }
 
+const mitzi = {
+  "id": 1,
+  "name": "Mitzi",
+  "email": "mmelloy0@psu.edu",
+  "gender": "F"
+}
+
+
 // Write your intern objects here:
 
 const interns = [{ "id": 1, "email": "mmelloy0@psu.edu", "firstName": "Mitzi", "gender": "F"}, 
