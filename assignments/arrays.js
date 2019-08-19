@@ -81,7 +81,6 @@ for (let i = 0; i < inventory.length; i++) {
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 
 let lastCar = inventory[inventory.length - 1];
-console.log(lastCar);
 let lastCarLog = function() {
   console.log(`The last car is a ${lastCar.car_make} ${lastCar.car_model}`);
 }
@@ -115,11 +114,21 @@ console.log(carYears);
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
 
 let oldCars = [];
+
+// let lastCarLog = function() {
+//   console.log(`The last car is a ${lastCar.car_make} ${lastCar.car_model}`);
+// }
+console.log(lastCarLog());
 for(let i = 0; i < carYears.length; i++) {
   if(carYears[i] < 2000) {
     oldCars.push(carYears[i]);
   }
 }
+let carLength = oldCars.length;
+let lengthArray = [];
+let length = function() {
+  lengthArray.push(`The length of this array is ${carLength}`);}
+oldCars.concat(lengthArray);
 console.log(oldCars); 
 
 // ==== Challenge 6 ====
