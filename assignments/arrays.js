@@ -115,21 +115,17 @@ console.log(carYears);
 
 let oldCars = [];
 
-// let lastCarLog = function() {
-//   console.log(`The last car is a ${lastCar.car_make} ${lastCar.car_model}`);
-// }
-console.log(lastCarLog());
 for(let i = 0; i < carYears.length; i++) {
   if(carYears[i] < 2000) {
     oldCars.push(carYears[i]);
   }
 }
-let carLength = oldCars.length;
-let lengthArray = [];
-let length = function() {
-  lengthArray.push(`The length of this array is ${carLength}`);}
-oldCars.concat(lengthArray);
-console.log(oldCars); 
+let carLength = [`This array has ${oldCars.length} cars`];
+let newCarsArray = carLength.concat(oldCars);
+console.log(newCarsArray); 
+// let carLength = oldCars.length;
+// oldCars.unshift(`This array has ${carLength} cars`);
+// console.log(oldCars); 
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
